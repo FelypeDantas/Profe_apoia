@@ -246,6 +246,27 @@ body {
   transform: scale(1.1) rotate(6deg);
 }
 
+.instagram-float {
+    position: fixed;
+    bottom: 80px; /* fica acima do WhatsApp */
+    right: 20px;
+    background: #E1306C;
+    color: white;
+    font-size: 22px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.instagram-float:hover {
+    transform: scale(1.1);
+    background: #c72b60;
+}
+
 /* =======================
    DOCS
 ======================= */
