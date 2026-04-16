@@ -247,6 +247,56 @@ body {
 }
 
 /* =======================
+   DOCS
+======================= */
+.docs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.doc-card {
+  background: white;
+  padding: 18px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid #eee;
+}
+
+.doc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+/* =======================
+   FEEDBACKS
+======================= */
+.feedbacks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.feedbacks img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.feedbacks img:hover {
+  transform: scale(1.03);
+}
+
+/* =======================
    ANIMATION
 ======================= */
 @keyframes fadeIn {
