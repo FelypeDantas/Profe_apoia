@@ -226,6 +226,24 @@ body {
 }
 
 /* =======================
+   FEEDBACKS E MODAL
+======================= */
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal img{
+    max-width:90%;
+    max-height:90%;
+}
+
+/* =======================
    CTA FINAL
 ======================= */
 .cta {
