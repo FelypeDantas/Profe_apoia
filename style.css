@@ -153,6 +153,34 @@ body {
 }
 
 /* =======================
+   AUTHOR
+======================= */
+
+.author-card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    max-width:900px;
+    margin:auto;
+    flex-wrap:wrap;
+}
+
+.author-photo{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid var(--primary);
+    box-shadow:var(--shadow-lg);
+}
+
+.author-info{
+    max-width:500px;
+    text-align:left;
+}
+
+/* =======================
    BUTTONS
 ======================= */
 .btn {
