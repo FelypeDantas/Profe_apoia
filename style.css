@@ -119,6 +119,26 @@ body {
 }
 
 /* =======================
+   CONFIANÇA
+======================= */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h3{
+    color:var(--primary);
+    font-size:2rem;
+}
+
+/* =======================
    BUTTONS
 ======================= */
 .btn {
