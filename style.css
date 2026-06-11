@@ -38,6 +38,18 @@ body {
 }
 
 /* =======================
+   HEADER
+======================= */
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    box-shadow:var(--shadow-sm);
+    z-index:999;
+}
+
+/* =======================
    ROLAGEM MODERNA
 ======================= */
 .hidden{
