@@ -36,3 +36,22 @@ document.querySelectorAll(".section").forEach(sec=>{
     sec.classList.add("hidden");
     observer.observe(sec);
 });
+
+let indice = 0;
+
+const slides =
+document.querySelectorAll(".feedbacks img");
+
+setInterval(() => {
+
+    slides.forEach(s => s.style.display = "none");
+
+    slides[indice].style.display = "block";
+
+    indice++;
+
+    if(indice >= slides.length){
+        indice = 0;
+    }
+
+}, 4000);
