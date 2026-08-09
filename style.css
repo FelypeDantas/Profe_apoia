@@ -2,13 +2,13 @@
    DESIGN SYSTEM
 ======================= */
 :root {
-  --primary: #0033cc;
+  --primary: #183B8C;
   --secondary: #b30000;
-  --accent: #00c853;
+  --accent: #25D366;
 
-  --text: #1f2937;
-  --muted: #6b7280;
-  --light-bg: #f9fafb;
+  --text: #1F2937;
+  --muted: #667085;
+  --light-bg: #F6F8FC;
   --white: #ffffff;
 
   --radius: 12px;
