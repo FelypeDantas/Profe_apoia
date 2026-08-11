@@ -421,6 +421,172 @@ body {
 }
 
 /* =======================
+   DIFERENCIAIS
+======================= */
+
+.trust {
+    position: relative;
+    overflow: hidden;
+}
+
+.trust-container {
+    width: min(100%, 1050px);
+    margin: 0 auto;
+}
+
+/* =======================
+   CABEÇALHO
+======================= */
+
+.trust-header {
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.trust-header h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.15;
+
+    letter-spacing: -0.8px;
+}
+
+.trust-header h2 span {
+    color: var(--primary);
+}
+
+.trust-header p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* =======================
+   GRID
+======================= */
+
+.trust-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+/* =======================
+   CARD
+======================= */
+
+.trust-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 28px;
+
+    background: var(--white);
+
+    border: 1px solid #e7ebf2;
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.trust-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(24, 59, 140, 0.2);
+
+    box-shadow: var(--shadow-md);
+}
+
+/* =======================
+   ÍCONE
+======================= */
+
+.trust-icon {
+    flex-shrink: 0;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(24, 59, 140, 0.08);
+
+    color: var(--primary);
+
+    font-size: 20px;
+}
+
+/* =======================
+   TEXTO
+======================= */
+
+.trust-card h3 {
+    margin-bottom: 7px;
+
+    color: var(--text);
+
+    font-size: 1rem;
+}
+
+.trust-card p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
+
+@media (max-width: 700px) {
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-header {
+        margin-bottom: 35px;
+    }
+
+    .trust-header h2 {
+        font-size: 30px;
+    }
+
+    .trust-card {
+        padding: 22px;
+    }
+
+}
+
+/* =======================
    HOVER
 ======================= */
 
