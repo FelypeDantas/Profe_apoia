@@ -2192,3 +2192,226 @@ body {
     font-size: 26px;
   }
 }
+
+/* =======================
+   FAQ
+======================= */
+
+.faq {
+    background: var(--white);
+}
+
+.faq-container {
+    width: min(100%, 850px);
+    margin: 0 auto;
+}
+
+/* =======================
+   CABEÇALHO
+======================= */
+
+.faq-header {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.faq-header h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.15;
+
+    letter-spacing: -0.8px;
+}
+
+.faq-header h2 span {
+    color: var(--primary);
+}
+
+.faq-header p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* =======================
+   LISTA
+======================= */
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* =======================
+   ITEM
+======================= */
+
+.faq-item {
+    background: var(--white);
+
+    border: 1px solid #e4e8ef;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(24, 59, 140, 0.25);
+}
+
+.faq-item[open] {
+    border-color: rgba(24, 59, 140, 0.25);
+
+    box-shadow: var(--shadow-sm);
+}
+
+/* =======================
+   PERGUNTA
+======================= */
+
+.faq-item summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 21px 24px;
+
+    color: var(--text);
+
+    font-size: 0.98rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* =======================
+   ÍCONE
+======================= */
+
+.faq-icon {
+    flex-shrink: 0;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(24, 59, 140, 0.08);
+
+    color: var(--primary);
+
+    font-size: 20px;
+    font-weight: 400;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+
+    background: var(--primary);
+
+    color: var(--white);
+}
+
+/* =======================
+   RESPOSTA
+======================= */
+
+.faq-answer {
+    padding: 0 24px 22px;
+}
+
+.faq-answer p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+}
+
+/* =======================
+   CTA
+======================= */
+
+.faq-cta {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+.faq-cta p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-weight: 600;
+}
+
+.faq-cta .btn {
+    margin: 0;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
+
+@media (max-width: 600px) {
+
+    .faq-item summary {
+        padding: 18px;
+
+        font-size: 0.93rem;
+    }
+
+    .faq-answer {
+        padding: 0 18px 20px;
+    }
+
+    .faq-cta {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+}
