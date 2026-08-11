@@ -240,38 +240,202 @@
     
     </section>
 
-    <!-- ABAS -->
-    <section class="section">
-        <h2>Área de Atuação</h2>
+ <!-- ÁREA DE ATUAÇÃO -->
+<section class="services section" id="servicos">
 
-        <div class="tabs">
-            <button class="tab active" onclick="openTab('academicos')">Acadêmicos</button>
-            <button class="tab" onclick="openTab('pedagogos')">Pedagogos</button>
+    <div class="services-container">
+
+        <div class="services-header">
+
+            <span class="section-label">COMO PODEMOS AJUDAR</span>
+
+            <h2>
+                Soluções para diferentes
+                <span>necessidades educacionais.</span>
+            </h2>
+
+            <p>
+                Escolha o seu perfil e conheça os tipos de suporte
+                disponíveis no Profe Apoia.
+            </p>
+
         </div>
 
-        <div id="academicos" class="tab-content active">
-            <ul>
-                <li>TCC e trabalhos acadêmicos</li>
-                <li>Provas e avaliações</li>
-                <li>Projetos acadêmicos</li>
-                <li>Artigos científicos</li>
-                <li>Relatórios de estágio</li>
-                <li>Revisão e correção de textos</li>
-                <li>Normas ABNT</li>
-            </ul>
-            <p class="highlight">Atendimento personalizado para cada necessidade.</p>
+        <!-- ABAS -->
+        <div class="tabs" role="tablist">
+
+            <button
+                class="tab active"
+                id="tab-academicos"
+                role="tab"
+                aria-selected="true"
+                aria-controls="academicos"
+                onclick="openTab('academicos', this)"
+            >
+                🎓 Acadêmicos
+            </button>
+
+            <button
+                class="tab"
+                id="tab-pedagogos"
+                role="tab"
+                aria-selected="false"
+                aria-controls="pedagogos"
+                onclick="openTab('pedagogos', this)"
+            >
+                📚 Pedagogos
+            </button>
+
         </div>
 
-        <div id="pedagogos" class="tab-content">
-            <ul>
-                <li>Criação de atividades pedagógicas</li>
-                <li>Elaboração de relatórios</li>
-                <li>Planejamento de aulas</li>
-                <li>Materiais didáticos</li>
-                <li>Organização de conteúdos escolares</li>
-            </ul>
-            <p class="highlight">Soluções práticas para o dia a dia educacional.</p>
+        <!-- ACADÊMICOS -->
+        <div
+            id="academicos"
+            class="tab-content active"
+            role="tabpanel"
+            aria-labelledby="tab-academicos"
+        >
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>TCC e trabalhos acadêmicos</h3>
+                    <p>
+                        Suporte na organização, estruturação e revisão
+                        de trabalhos acadêmicos.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Orientação para avaliações</h3>
+                    <p>
+                        Apoio na preparação e organização dos conteúdos
+                        para avaliações e estudos.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Projetos acadêmicos</h3>
+                    <p>
+                        Auxílio na organização e desenvolvimento
+                        de projetos acadêmicos.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Artigos científicos</h3>
+                    <p>
+                        Suporte na estruturação, revisão e organização
+                        de artigos científicos.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Relatórios de estágio</h3>
+                    <p>
+                        Orientação para organização e revisão
+                        de relatórios acadêmicos.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✍️</div>
+                    <h3>Revisão de textos</h3>
+                    <p>
+                        Revisão de escrita, clareza, coerência
+                        e organização textual.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3>Normas ABNT</h3>
+                    <p>
+                        Orientação e adequação da estrutura e formatação
+                        às normas acadêmicas.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="services-note">
+                Atendimento personalizado de acordo com as necessidades
+                de cada projeto.
+            </div>
+
         </div>
+
+        <!-- PEDAGOGOS -->
+            <div
+                id="pedagogos"
+                class="tab-content"
+                role="tabpanel"
+                aria-labelledby="tab-pedagogos"
+            >
+    
+                <div class="service-grid">
+    
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Atividades pedagógicas</h3>
+                        <p>
+                            Criação e organização de atividades adequadas
+                            aos objetivos educacionais.
+                        </p>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h3>Relatórios</h3>
+                        <p>
+                            Apoio na elaboração e organização
+                            de relatórios pedagógicos.
+                        </p>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-icon">📅</div>
+                        <h3>Planejamento de aulas</h3>
+                        <p>
+                            Organização de planejamentos e propostas
+                            para diferentes contextos educacionais.
+                        </p>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-icon">📚</div>
+                        <h3>Materiais didáticos</h3>
+                        <p>
+                            Desenvolvimento e organização de materiais
+                            para apoiar o processo de ensino.
+                        </p>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-icon">🗂️</div>
+                        <h3>Organização de conteúdos</h3>
+                        <p>
+                            Estruturação de conteúdos escolares de forma
+                            clara, prática e organizada.
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <div class="services-note">
+                    Soluções práticas pensadas para facilitar a rotina
+                    educacional.
+                </div>
+    
+            </div>
+    
+        </div>
+    
     </section>
 
     <!-- CONFIANÇA -->
