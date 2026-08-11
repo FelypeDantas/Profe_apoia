@@ -1,57 +1,52 @@
-const imagens = document.querySelectorAll(".feedbacks img");
+const feedbacks = document.querySelectorAll(".feedback-card");
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
+const closeModal = document.getElementById("close");
 
-imagens.forEach(img=>{
-    img.addEventListener("click",()=>{
-        modal.style.display="flex";
+feedbacks.forEach(feedback => {
+
+    const img = feedback.querySelector("img");
+
+    feedback.addEventListener("click", () => {
+
         modalImg.src = img.src;
+
+        modal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
     });
+
 });
 
-modal.addEventListener("click",()=>{
-    modal.style.display="none";
-});
 
-function openTab(tabId) {
-  const contents = document.querySelectorAll(".tab-content");
-  const tabs = document.querySelectorAll(".tab");
+function fecharModal() {
 
-  contents.forEach(c => c.classList.remove("active"));
-  tabs.forEach(t => t.classList.remove("active"));
+    modal.classList.remove("active");
 
-  document.getElementById(tabId).classList.add("active");
-  event.target.classList.add("active");
+    document.body.style.overflow = "";
+
+    modalImg.src = "";
+
 }
 
-const observer = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    });
-});
 
-document.querySelectorAll(".section").forEach(sec=>{
-    sec.classList.add("hidden");
-    observer.observe(sec);
-});
+closeModal.addEventListener("click", fecharModal);
 
-let indice = 0;
 
-const slides =
-document.querySelectorAll(".feedbacks img");
+modal.addEventListener("click", event => {
 
-setInterval(() => {
-
-    slides.forEach(s => s.style.display = "none");
-
-    slides[indice].style.display = "block";
-
-    indice++;
-
-    if(indice >= slides.length){
-        indice = 0;
+    if (event.target === modal) {
+        fecharModal();
     }
 
-}, 4000);
+});
+
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+        fecharModal();
+    }
+
+});
